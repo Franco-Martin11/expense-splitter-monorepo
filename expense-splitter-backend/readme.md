@@ -18,11 +18,7 @@ Este proyecto es el backend de una aplicación para dividir gastos entre persona
 3. Instala las dependencias ejecutando los siguiente comando:
 
 ```bash
-npm install express @prisma/client bcryptjs cors dotenv joi jsonwebtoken prisma
-```
-
-```bash
-npm install -D @types/express @types/bcryptjs @types/cors @types/dotenv @types/joi @types/jsonwebtoken typescript ts-node-dev
+npm install
 ```
 
 4. Configura las variables de entorno en un archivo `.env`.
