@@ -1,75 +1,77 @@
-# Nuxt 3 Minimal Starter
+# Expense Splitter Frontend
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Este proyecto es el frontend de una aplicación para dividir gastos entre personas, construido con **Nuxt 3**, **Pinia**, y **DaisyUI**. Proporciona una interfaz para gestionar gastos y facilitar el cálculo de deudas entre grupos.
 
-## Setup
+## Tabla de Contenidos
+- [Instalación](#instalación)
+- [Scripts Disponibles](#scripts-disponibles)
+- [Dependencias](#dependencias)
+- [Dependencias de Desarrollo](#dependencias-de-desarrollo)
+- [Contribución](#contribución)
+- [Licencia](#licencia)
 
-Make sure to install the dependencies:
+## Instalación
+
+1. Clona el repositorio.
+2. Navega al directorio del proyecto.
+3. Instala las dependencias ejecutando el siguiente comando:
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
+## Scripts Disponibles
 
-Start the development server on `http://localhost:3000`:
+En el archivo `package.json` hay varios scripts definidos:
+- **`build`**: Construye la aplicación para producción.
+  ```bash
+  pnpm build
+  ```
+- **`dev`**: Inicia el servidor en modo desarrollo.
+  ```bash
+  pnpm dev
+  ```
+- **`generate`**: Genera una versión estática de la aplicación.
+  ```bash
+  pnpm generate
+  ```
+- **`preview`**: Previsualiza la aplicación generada.
+  ```bash
+  pnpm preview
+  ```
+- **`postinstall`**: Prepara la aplicación después de la instalación.
+  ```bash
+  pnpm postinstall
+  ```
 
-```bash
-# npm
-npm run dev
+## Dependencias
 
-# pnpm
-pnpm run dev
+Las siguientes bibliotecas son esenciales para el funcionamiento del frontend:
 
-# yarn
-yarn dev
+- **nuxt**: Framework de Vue.js para aplicaciones universales.
+- **@pinia/nuxt**: Integración de Pinia para manejo de estado.
+- **pinia**: Librería para manejo de estado en aplicaciones Vue.
+- **vue**: Framework progresivo para construir interfaces de usuario.
+- **vue-router**: Sistema de enrutamiento para Vue.js.
 
-# bun
-bun run dev
-```
+## Dependencias de Desarrollo
 
-## Production
+Estas bibliotecas son utilizadas durante el desarrollo:
 
-Build the application for production:
+- **autoprefixer**: Añade prefijos de navegador automáticamente a CSS.
+- **daisyui**: Un plugin para Tailwind CSS que proporciona componentes UI.
+- **postcss**: Herramienta para transformar CSS con JavaScript.
+- **tailwindcss**: Framework CSS para un diseño moderno y responsivo.
 
-```bash
-# npm
-npm run build
+## Contribución
 
-# pnpm
-pnpm run build
+Las contribuciones son bienvenidas. Si deseas colaborar, por favor sigue estos pasos:
 
-# yarn
-yarn build
+1. Haz un fork del repositorio.
+2. Crea una rama para tu característica (`git checkout -b feature/nueva-caracteristica`).
+3. Realiza tus cambios y haz un commit (`git commit -m 'Agrega nueva característica'`).
+4. Envía un pull request.
 
-# bun
-bun run build
-```
+## Licencia
 
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Este proyecto está bajo la Licencia ISC. Para más información, consulta el archivo [LICENSE](./LICENSE).
