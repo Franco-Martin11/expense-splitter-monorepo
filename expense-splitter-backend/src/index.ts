@@ -12,22 +12,24 @@
 //     console.log(`Server running in http://localhost:${PORT}`)
 // })
 
-import express from 'express';
-import cors from 'cors';
-import dotenv from 'dotenv';
-import debtRouter from './routes/debtRoutes';
+import express from "express";
+import cors from "cors";
+import dotenv from "dotenv";
+import debtRouter from "./routes/debtRoutes";
+import getRouter from "./controllers/getData";
 // import authRoutes from './routes/authRoutes';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.use(cors());
 app.use(express.json());
 
 // Rutas
 // app.use('/api/auth', authRoutes);
-app.use('/api/debt', debtRouter );
+app.use("/api/debt", debtRouter);
+app.use("/api/getData", getRouter);
 
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);

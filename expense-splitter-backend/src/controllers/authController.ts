@@ -14,7 +14,7 @@ export const register = async (req: Request, res: Response) => {
   const hashedPassword = await bcrypt.hash(password, 10);
 
   const user = await createUser({ email, password: hashedPassword,name });
-  res.status(201).json({ id: user.id, email: user.email });
+  return res.status(201).json({ id: user.id, email: user.email });
 };
 
 // Inicio de Sesión
@@ -34,5 +34,5 @@ export const login = async (req: Request, res: Response) => {
     expiresIn: '1h',
   });
 
-  res.json({ token });
+ return res.json({ token });
 };
